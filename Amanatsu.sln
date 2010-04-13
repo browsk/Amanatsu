@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Amanatsu", "Amanatsu\Amanatsu.fsproj", "{822266A2-D73D-4CCB-8AD1-DA3C946215F4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Amanatsu.Message", "Amanatsu.Message\Amanatsu.Message.fsproj", "{E50355C8-F7B7-40BD-8D9A-942C49715255}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Amanatsu.Message.Test", "Amanatsu.Message.Test\Amanatsu.Message.Test.fsproj", "{15BAFBE4-7FF1-43C7-8E4E-B00BBA783EA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{822266A2-D73D-4CCB-8AD1-DA3C946215F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822266A2-D73D-4CCB-8AD1-DA3C946215F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822266A2-D73D-4CCB-8AD1-DA3C946215F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822266A2-D73D-4CCB-8AD1-DA3C946215F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50355C8-F7B7-40BD-8D9A-942C49715255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50355C8-F7B7-40BD-8D9A-942C49715255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50355C8-F7B7-40BD-8D9A-942C49715255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50355C8-F7B7-40BD-8D9A-942C49715255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15BAFBE4-7FF1-43C7-8E4E-B00BBA783EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15BAFBE4-7FF1-43C7-8E4E-B00BBA783EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15BAFBE4-7FF1-43C7-8E4E-B00BBA783EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15BAFBE4-7FF1-43C7-8E4E-B00BBA783EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
