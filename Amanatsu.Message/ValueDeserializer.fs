@@ -15,3 +15,11 @@ type ValueDeserializer(data : seq<byte>) =
         d <- Seq.skip 4 d
         value
         
+    member this.getString =
+        let length = this.getInt
+        
+        let bytes = Seq.toArray (Seq.take length d)
+        
+        d <- Seq.skip length d
+        
+        Encoding.ASCII.GetString(bytes)

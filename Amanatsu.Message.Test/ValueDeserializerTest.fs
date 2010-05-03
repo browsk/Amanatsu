@@ -45,3 +45,20 @@ module public ValueDeserializerTests =
         
         Assert.Equal(0x01020304, deserializer.getInt)
         Assert.Equal(0x00021503, deserializer.getInt)
+
+
+    [<Fact>]
+    let Test_Can_Get_Empty_String() =
+        let data = [| 0uy; 0uy; 0uy; 0uy; |] |> Seq.ofArray
+        
+        let deserializer = new ValueDeserializer(data) 
+        
+        Assert.Equal("", deserializer.getString)
+
+    [<Fact>]
+    let Test_Can_Get_String() =
+        let data = [| 0uy; 0uy; 0uy; 5uy; (byte)'h'; (byte)'e'; (byte)'l'; (byte)'l'; (byte)'o' |] |> Seq.ofArray
+        
+        let deserializer = new ValueDeserializer(data) 
+        
+        Assert.Equal("hello", deserializer.getString)
