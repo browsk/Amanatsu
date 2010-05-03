@@ -41,6 +41,11 @@
     <Compile Include="Amanatsu.fs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Amanatsu.Command\Amanatsu.Command.fsproj">
+      <Name>Amanatsu.Command</Name>
+      <Project>{6ec53da1-a2bd-4535-a051-4e1267870aaa}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Amanatsu.Message\Amanatsu.Message.fsproj">
       <Name>Amanatsu.Message</Name>
       <Project>{e50355c8-f7b7-40bd-8d9a-942c49715255}</Project>

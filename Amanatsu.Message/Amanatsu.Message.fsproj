@@ -44,6 +44,7 @@
     <Compile Include="OkMessage.fs" />
     <Compile Include="DiscoveryResponse.fs" />
     <Compile Include="ValueSerializer.fs" />
+    <Compile Include="ValueDeserializer.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

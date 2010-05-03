@@ -6,6 +6,7 @@ open System.Text
 open System.Collections.Generic
 open System.Linq
 open Amanatsu.Message
+open Amanatsu.Command
 
 let mutable anyErrors = false
 
@@ -34,6 +35,8 @@ let handleClient (client: TcpClient) = async {
         let bytesRead = stream.Read(buffer, 0, packetLen)
         
         printfn "Read %A bytes for message type %A: %A" bytesRead buffer.[0] buffer
+        
+        processCommand (Array.toList buffer)
         
         socketClosed := (bytesRead = 0)
         

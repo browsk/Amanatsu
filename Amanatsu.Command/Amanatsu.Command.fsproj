@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{15bafbe4-7ff1-43c7-8e4e-b00bba783ea2}</ProjectGuid>
+    <ProjectGuid>{6ec53da1-a2bd-4535-a051-4e1267870aaa}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Amanatsu.Message.Test</RootNamespace>
-    <AssemblyName>Amanatsu.Message.Test</AssemblyName>
+    <RootNamespace>Amanatsu.Command</RootNamespace>
+    <AssemblyName>Amanatsu.Command</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <Name>Amanatsu.Message.Test</Name>
+    <Name>Amanatsu.Command</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,24 +36,10 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="xunit">
-      <HintPath>..\Libraries\xunit\xunit.dll</HintPath>
-    </Reference>
-    <Reference Include="xunit.extensions">
-      <HintPath>..\Libraries\xunit\xunit.extensions.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ValueSerializerTest.fs" />
-    <Compile Include="OkMessageTest.fs" />
-    <Compile Include="ValueDeserializerTest.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Amanatsu.Message\Amanatsu.Message.fsproj">
-      <Name>Amanatsu.Message</Name>
-      <Project>{e50355c8-f7b7-40bd-8d9a-942c49715255}</Project>
-      <Private>True</Private>
-    </ProjectReference>
+    <Compile Include="Command.fs" />
+    <None Include="Script.fsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
